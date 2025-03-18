@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace motasAlcoa.Models
 {
@@ -34,19 +35,24 @@ namespace motasAlcoa.Models
         /// </summary>
         public string Matricula { get; set; }
 
-        /// <summary>
-        /// Data em que foi criado o perfil do motociclo
-        /// </summary>
-        public DateTime DataCriacao { get; set; }
-
-        /// <summary>
-        /// Data da última atualização do perfil do motociclo
-        /// </summary>
-        public DateTime DataAtualizacao { get; }
 
         /// <summary>
         /// Identificador do cliente ao qual o motociclo está associado
         /// </summary>
-        public int ClienteID { get; set; }
+        [ForeignKey(nameof(Cliente))]
+        public int? ClienteFK { get; set; }
+
+
+        /// <summary>
+        /// FK para os clientes
+        /// </summary>
+        public Clientes? Cliente { get; set; }
+
+
+        /// <summary>
+        /// Lista dos serviços que estão associados a um motociclo
+        /// </summary>
+        public ICollection<Servicos> ListaServicos { get; set; }
+
     }
 }

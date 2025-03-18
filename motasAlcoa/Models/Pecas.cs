@@ -16,28 +16,19 @@
         public string Nome { get; set; }
 
         /// <summary>
-        /// Preço ao qual foi comprada a peça
+        /// Descrição da peça com as suas caracteristicas
         /// </summary>
-        public Decimal PrecoCompra {  get; set; }
+        public string descricao { get; set; }
 
         /// <summary>
-        /// Preço ao qual foi vendida a peça
+        /// Preço ao qual a peça vai ser vendida
         /// </summary>
-        public Decimal PrecoVenda { get; set; }
+        public Decimal Preco {  get; set; }
 
         /// <summary>
         /// Quantidade da peça disponível em armazém 
         /// </summary>
         public int QuantidadeStock { get; set; }    
 
-        /// <summary>
-        /// Data em que foi criado o perfil do cliente
-        /// </summary>
-        public DateTime DataCriacao { get; set; }
-
-        /// <summary>
-        /// Data da última atualização do perfil do cliente
-        /// </summary>
-        public DateTime DataAtualizacao { get; }
     }
 }

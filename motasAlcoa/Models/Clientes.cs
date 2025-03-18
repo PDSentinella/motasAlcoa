@@ -37,13 +37,8 @@ namespace motasAlcoa.Models
 
 
         /// <summary>
-        /// Data em que foi criado o perfil do cliente
+        /// Lista dos motociclos que estão associados a um cliente
         /// </summary>
-        public DateTime DataCriacao { get; set; }
-
-        /// <summary>
-        /// Data da última atualização do perfil do cliente
-        /// </summary>
-        public DateTime DataAtualizacao { get;}
+        public ICollection<Motociclos> ListaMotociclos { get; set; }
     }
 }
