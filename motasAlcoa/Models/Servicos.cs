@@ -2,6 +2,7 @@
 
 namespace motasAlcoa.Models
 {
+    ///
     /// <summary>
     /// Tem como função registar os serviços que são prestados
     /// </summary>

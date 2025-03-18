@@ -2,7 +2,7 @@
 
 namespace motasAlcoa.Models
 {
-
+    ///
     /// <summary>
     /// Regista os clientes da oficina
     /// </summary>
