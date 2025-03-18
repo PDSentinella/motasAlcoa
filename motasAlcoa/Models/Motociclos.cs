@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace motasAlcoa.Models
 {
+    ///
     /// <summary>
     /// Regista os motociclos que dão entrada na oficina
     /// </summary>

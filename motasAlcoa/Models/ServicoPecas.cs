@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace motasAlcoa.Models
 {
+    ///
     /// <summary>
     /// Representa a relação entre os serviços realizados e as peças utilizadas.
     /// Cada registro nesta tabela indica quantas unidades de uma peça foram usadas
